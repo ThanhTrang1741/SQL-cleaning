@@ -1,5 +1,5 @@
 # SQL-cleaning
-===**cleaning data**
+### **cleaning data**
 
 |full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
 |---------|---|--------------|-----|-----|------------|---------|---------------|
