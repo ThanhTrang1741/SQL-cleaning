@@ -26,16 +26,19 @@ ___create a new table to clean data
 	membership_date VARCHAR(50)
 )
 
-___ insert the information into the new table was created 
+# insert the information into the new table was created 
     insert into club_member_info_cleaned
     select * from club_member_info;
-___ update upper full_name column 
+    
+# update upper full_name column 
     UPDATE club_member_info_cleaned
     SET full_name = UPPER(trim(full_name));
-___ update age column where age >100 
+    
+# update age column where age >100 
     UPDATE club_member_info_cleaned
     SET age = 40 where age >100;
-___ update martial_status column where  martial_status is null
+    
+# update martial_status column where  martial_status is null
     UPDATE club_member_info_cleaned
     SET martial_status = 'married' where  martial_status ='' ;
 
