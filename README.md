@@ -25,3 +25,6 @@ nmbgjhjk
 	job_title VARCHAR(50),
 	membership_date VARCHAR(50)
 );
+
+    insert into club_member_info_cleaned
+select * from club_member_info
