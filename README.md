@@ -1,7 +1,6 @@
 # SQL-cleaning
 **cleaning data**
 
-
 |full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
 |---------|---|--------------|-----|-----|------------|---------|---------------|
 |addie lush|40|married|alush0@shutterfly.com|254-389-8708|3226 Eastlawn Pass,Temple,Texas|Assistant Professor|7/31/2013|
@@ -15,6 +14,7 @@
 |mendie alexandrescu|46|single|malexandrescu8@state.gov|504-918-4753|34 Delladonna Terrace,New Orleans,Louisiana|Systems Administrator III|3/12/1921|
 | fey kloss|52|married|fkloss9@godaddy.com|808-177-0318|8976 Jackson Park,Honolulu,Hawaii|Chemical Engineer|11/5/2014|
 
+___create a new table to clean data
     CREATE TABLE club_member_info_cleaned (
 	full_name VARCHAR(50),
 	age INTEGER,
@@ -26,16 +26,16 @@
 	membership_date VARCHAR(50)
 )
 
-___ 
+___ insert the information into the new table was created 
     insert into club_member_info_cleaned
     select * from club_member_info;
-___
+___ update upper full_name column 
     UPDATE club_member_info_cleaned
     SET full_name = UPPER(trim(full_name));
-___
+___ update age column where age >100 
     UPDATE club_member_info_cleaned
     SET age = 40 where age >100;
-___
+___ update martial_status column where  martial_status is null
     UPDATE club_member_info_cleaned
     SET martial_status = 'married' where  martial_status ='' ;
 
