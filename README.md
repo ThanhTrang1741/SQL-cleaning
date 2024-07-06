@@ -42,5 +42,5 @@
 ## update martial_status column where  martial_status is null
     UPDATE club_member_info_cleaned
     SET martial_status = 'married' where  martial_status ='' ;
-
-*** done data is superrrrr clean =]]]. Have a nice weekend ***
+    
+__*** done data is superrrrr clean =]]]. Have a nice weekend ***__
