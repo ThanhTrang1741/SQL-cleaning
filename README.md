@@ -1,6 +1,6 @@
 # SQL-cleaning
-cleaning data
-nmbgjhjk
+**cleaning data**
+
 
 |full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
 |---------|---|--------------|-----|-----|------------|---------|---------------|
@@ -24,8 +24,9 @@ nmbgjhjk
 	full_address VARCHAR(50),
 	job_title VARCHAR(50),
 	membership_date VARCHAR(50)
-);
+)
 
+___ 
     insert into club_member_info_cleaned
     select * from club_member_info;
 ___
