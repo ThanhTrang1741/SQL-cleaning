@@ -27,15 +27,15 @@ nmbgjhjk
 );
 
     insert into club_member_info_cleaned
-select * from club_member_info;
-
+    select * from club_member_info;
+___
     UPDATE club_member_info_cleaned
-SET full_name = UPPER(trim(full_name));
-
+    SET full_name = UPPER(trim(full_name));
+___
     UPDATE club_member_info_cleaned
-SET age = 40 where age >100;
-
+    SET age = 40 where age >100;
+___
     UPDATE club_member_info_cleaned
-SET martial_status = 'married' where  martial_status ='' ;
+    SET martial_status = 'married' where  martial_status ='' ;
 
 
