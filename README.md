@@ -34,6 +34,14 @@
 ## update upper full_name column 
     UPDATE club_member_info_cleaned
     SET full_name = UPPER(trim(full_name));
+
+|full_name|
+|---------|
+|ADDIE LUSH|
+|ROCK CRADICK|
+|SYDEL SHARVELL|
+|CONSTANTIN DE LA CRUZ|
+|GAYLOR REDHOLE|
     
 ## update age column where age >100 
     UPDATE club_member_info_cleaned
