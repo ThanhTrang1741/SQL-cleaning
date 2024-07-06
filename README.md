@@ -1,5 +1,5 @@
 # SQL-cleaning
-**cleaning data**
+#**cleaning data**
 
 |full_name|age|martial_status|email|phone|full_address|job_title|membership_date|
 |---------|---|--------------|-----|-----|------------|---------|---------------|
@@ -26,19 +26,19 @@ ___create a new table to clean data
 	membership_date VARCHAR(50)
 )
 
-# insert the information into the new table was created 
+## insert the information into the new table was created 
     insert into club_member_info_cleaned
     select * from club_member_info;
     
-# update upper full_name column 
+## update upper full_name column 
     UPDATE club_member_info_cleaned
     SET full_name = UPPER(trim(full_name));
     
-# update age column where age >100 
+## update age column where age >100 
     UPDATE club_member_info_cleaned
     SET age = 40 where age >100;
     
-# update martial_status column where  martial_status is null
+## update martial_status column where  martial_status is null
     UPDATE club_member_info_cleaned
     SET martial_status = 'married' where  martial_status ='' ;
 
